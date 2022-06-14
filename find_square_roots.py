@@ -3,18 +3,20 @@ from math import sqrt
 from typing import Tuple, Optional
 
 
-def find_square_roots(a: float, b: float, c: float) -> Tuple[Optional[float], Optional[float]]:
+def find_square_roots(
+    coef_a: float, coef_b: float, coef_c: float
+) -> Tuple[Optional[float], Optional[float]]:
     """docs"""
-    d = b * b - 4 * a * c
+    discr = coef_b * coef_b - 4 * coef_a * coef_c
 
-    if d < 0:
+    if discr < 0:
         return None, None
 
-    x1 = (-b - sqrt(d)) / (2 * a)
+    x_1 = (-coef_b - sqrt(discr)) / (2 * coef_a)
 
-    if d == 0:
-        x2 = None
+    if discr == 0:
+        x_2 = None
     else:
-        x2 = (-b + sqrt(d)) / (2 * a)
+        x_2 = (-coef_b + sqrt(discr)) / (2 * coef_a)
 
-    return x1, x2
+    return x_1, x_2
