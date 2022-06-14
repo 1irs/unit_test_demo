@@ -12,7 +12,7 @@ def find_square_roots(a: float, b: float, c: float) -> Tuple[Optional[float], Op
     x1 = (-b - sqrt(d)) / (2 * a)
 
     if d == 0:
-        x2 = 0
+        x2 = None
     else:
         x2 = (-b + sqrt(d)) / (2 * a)
 
