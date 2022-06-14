@@ -2,3 +2,4 @@
 .DS_Store/
 test-reports/
 .ipynb_checkpoints/
+__pycache__/
