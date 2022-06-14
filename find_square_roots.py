@@ -1,9 +1,10 @@
+"""docs"""
 from math import sqrt
 from typing import Tuple, Optional
 
 
 def find_square_roots(a: float, b: float, c: float) -> Tuple[Optional[float], Optional[float]]:
-
+    """docs"""
     d = b * b - 4 * a * c
 
     if d < 0:
